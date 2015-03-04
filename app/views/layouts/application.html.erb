@@ -63,8 +63,9 @@
 <footer>
   <%= link_to new_user_session_path do%><span class="fa fa-sign-in"></span>Staff login<%end%>
   This is the footer
-  <!--The link below is for developmental purposes and will be deleted before deploying to production-->
-  <%= link_to "Sign up", user_registration_path%>
+  <!--The links below are for developmental purposes and will be deleted before deploying to production-->
+  <%= link_to "Sign up", new_user_registration_path%>
+  <%= link_to "Log Out", destroy_user_session_path%>
 </footer>
 
     <%= javascript_include_tag "application" %>
