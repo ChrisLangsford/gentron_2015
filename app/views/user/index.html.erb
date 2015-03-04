@@ -1,0 +1,24 @@
+<h1>Users with access to the website</h1>
+<hr>
+<%= link_to "New user", new_user_path%>
+<div>
+	<table>
+		<thead>
+			<th>Email</th>
+			<th>Options</th>
+		</thead>
+		<tbody>
+			<%@users.each do |u|%>
+			<tr>
+				<td><%=u.email%></td>
+				<td>
+					<%= link_to "Edit", edit_user_path(u)%>
+					<%= link_to u, method: :delete, data: {confrim: "Are you sure?"} do%>
+					Delete Account
+					<%end%>
+				</td>
+			</tr>
+			<%end%>
+		</tbody>
+	</table>
+</div>
