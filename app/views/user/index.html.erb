@@ -11,7 +11,12 @@
 			<%@users.each do |u|%>
 			<tr>
 				<td><%=u.email%></td>
-				<td><%= link_to "Edit", edit_user_path(u)%></td>
+				<td>
+					<%= link_to "Edit", edit_user_path(u)%>
+					<%= link_to u, method: :delete, data: {confrim: "Are you sure?"} do%>
+					Delete Account
+					<%end%>
+				</td>
 			</tr>
 			<%end%>
 		</tbody>

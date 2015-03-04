@@ -26,7 +26,8 @@ def index
     end
   end
 
-  def edit    
+  def edit 
+
   end
 
   def update
@@ -43,7 +44,7 @@ def index
   def destroy    
     if @user.destroy
       flash[:notice] = "Successfully deleted User."
-      redirect_to root_path
+      redirect_to user_index_path
     end
   end 
 
