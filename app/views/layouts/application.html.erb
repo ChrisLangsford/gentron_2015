@@ -40,13 +40,23 @@
     </ul>
   </section>
 </nav>
+
+<% flash.each do |name, msg| %>
+  <% if msg.is_a?(String) %>
+    <div data-alert class="alert-box round <%= name.to_s == 'notice' ? 'success' : 'alert' %>">
+      <%= content_tag :div, msg %>
+      <a href="#" class="close">&times;</a>
+    </div>
+  <% end %>
+<% end %>
+
 <div class="row">
   <div class="large-3 columns"></div>
   <div class="large-6 columns"><%= yield %></div>
   <div class="large-3 columns"></div>
 </div>
 <footer>
-  This is the footer
+  This is the footer  
 </footer>
 
     <%= javascript_include_tag "application" %>
