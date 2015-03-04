@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "IT Outsourcing | ICT Solutions | Software | Cloud Computing" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+   <nav class="top-bar" data-topbar role="navigation">
+   <ul class="title-area">
+     <li class="name">
+
+      <h1><a href="welcome.html.erb">Gentron</a></h1>
+     </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+         </ul>
+       </li>
+     </ul>
+
+   <!-- Right Nav Section -->
+
+     <!-- Left Nav Section -->
+     <ul class="left">
+       <li><a href="#">Home</a></li>
+     </ul>
+   </section>
+ </nav>
+
+ <!-- Left Nav Section -->
+ 
+ <!--This just makes it easy to read: HEADER-->
+ <% end %>
+ 
+ <div class="row" style="height: 800px">
+
+ <div class="row">
+
+   <div class="large-1 columns"></div>
+   <div class="large-10 columns"><%= yield %></div>
+   <div class="large-1 columns"></div>
+ </div>
+ 
+
+
+
+  <center>
+  <%= link_to new_user_session_path do%><span class="fa fa-sign-in"></span>Staff login<%end%><br />
+   <!--The links below are for developmental purposes and will be deleted before deploying to production-->
+   <%= link_to "Sign up", new_user_registration_path%>
+   <%if current_user.present?%>
+   <p>Signed in as <b><%=current_user.email%> (<%=link_to "Change password",edit_user_registration_path%>)</b></p>
+   <%= link_to "Log Out", destroy_user_session_path%>
+   <%end%>
+
+</center>
+ </footer>
+ 
+     <%= javascript_include_tag "application" %>
+  </body>
+</html>
