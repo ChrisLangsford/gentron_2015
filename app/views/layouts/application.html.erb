@@ -51,12 +51,20 @@
 <% end %>
 
 <div class="row">
-  <div class="large-3 columns"></div>
-  <div class="large-6 columns"><%= yield %></div>
-  <div class="large-3 columns"></div>
+  <div class="large-1 columns"></div>
+  <div class="large-10 columns"><%= yield %></div>
+  <div class="large-1 columns"></div>
 </div>
+
+
+
+
+
 <footer>
-  This is the footer  
+  <%= link_to new_user_session_path do%><span class="fa fa-sign-in"></span>Staff login<%end%>
+  This is the footer
+  <!--The link below is for developmental purposes and will be deleted before deploying to production-->
+  <%= link_to "Sign up", user_registration_path%>
 </footer>
 
     <%= javascript_include_tag "application" %>
