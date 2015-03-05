@@ -60,7 +60,8 @@
         <% if current_user.present? == false%>
         <%= link_to "Staff Login", new_user_session_path%> |
         <%else%>        
-        Signed in as <b><%=current_user.email%> (<%=link_to "Change password",edit_user_registration_path%>)</b> | 
+        Signed in as <b><%=current_user.email%> (<%=link_to "Change password",edit_user_registration_path%>)</b> |
+        <%= link_to "Staff tasks", staff_path%> |
         <%end%>       
         <!--The links below are for developmental purposes and will be deleted before deploying to production-->
         <%= link_to "Sign up", new_user_registration_path%> |
