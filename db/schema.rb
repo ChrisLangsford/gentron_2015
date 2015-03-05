@@ -16,6 +16,9 @@ ActiveRecord::Schema.define(version: 20150305165850) do
   create_table "articles", force: true do |t|
     t.string   "title"
     t.string   "body"
+    t.string   "link"
+    t.string   "link_display_text"
+    t.string   "reference"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
