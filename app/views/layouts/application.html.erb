@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "IT Outsourcing | ICT Solutions | Software | Cloud Computing" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -56,8 +56,6 @@
 <footer class="footer">
   <div class="container">
   <p class="muted">
-
-
         <% if current_user.present? == false%>
         <%= link_to "Staff Login", new_user_session_path%> |
         <%else%>        
@@ -71,8 +69,7 @@
     </div>
 </footer>
 
-
-
-    <%= javascript_include_tag "application" %>
+ 
+     <%= javascript_include_tag "application" %>
   </body>
 </html>
