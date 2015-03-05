@@ -2,10 +2,7 @@
   <%= f.error_notification %>
   
     <%= f.input :title %>
-    <%= f.input :body, as: :text %>
-    <%= f.input :link%>
-    <%= f.input :link_display_text%>
-    <%= f.input :reference%>
+    <%= f.cktext_area :body, :class => 'ckeditor'%>    
     <%= f.input :image, as: :file, label: "Cover picture"%>
     <%= f.button :submit %>
 <% end %>

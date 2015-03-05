@@ -35,6 +35,7 @@ gem "font-awesome-rails"
 
 gem 'seed_dump', '~> 3.2.0'
 gem 'twitter-bootstrap-rails'
+gem 'ckeditor'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

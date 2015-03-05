@@ -7,55 +7,30 @@
 </h1>
 
 <%@articles.each do |a|%>
-  <div>
-    <%=image_tag(a.image(:thumb))%>
+  <div class="row">
+    <%=image_tag(a.image(:medium), class: "col-md-10 col-md-offset-1")%>
+    <div class="col-md-12">
+      <h2>
+        <%=a.title.capitalize%>
+        <%=link_to edit_article_path(a), class: "btn btn-sm btn-default" do %>
+          <span class="fa fa-pencil"></span>
+          Edit
+        <%end%>
+        <%= link_to a, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-default" do%>
+        <span class="fa fa-trash"></span>
+        Destroy
+        <%end%>
+        
+      </h2>
+      <p><%= raw(a.body)%></p>
+      <%if a.link.present?%>
+      <%=link_to a.link_display_text, a.link%>
+      <%end%>
+      <%if a.reference.present?%>
+      <p><b>Reference</b></p>
+      <%=link_to a.reference.to_s, a.reference%>
+      <%end%>      
+    </div>
 
-    <h2>
-      <%=a.title.capitalize%>
-      <%=link_to edit_article_path(a), class: "btn btn-sm btn-default" do %>
-        <span class="fa fa-pencil"></span>
-        Edit
-      <%end%>
-      <%= link_to a, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-default" do%>
-      <span class="fa fa-trash"></span>
-      Destroy
-      <%end%>
-      
-    </h2>
-    <p><%= a.body%></p>
-    <%if a.link.present?%>
-    <%=link_to a.link_display_text, a.link%>
-    <%end%>
-    <%if a.reference.present?%>
-    <p><b>Reference</b></p>
-    <%=link_to a.reference.to_s, a.reference%>
-    <%end%>
   </div>
 <%end%>
-
-<!-- <table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @articles.each do |article| %>
-      <tr>
-      <%= image_tag(article.image)%>
-        <td><%= article.title %></td>
-        <td><%= article.body %></td>
-        <td><%= link_to 'Show', article %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Article', new_article_path %> -->

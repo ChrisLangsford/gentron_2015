@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   resources :articles
 
   devise_for :users
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
   get 'staff/' => 'staff#index'
   get 'reports/feedback' => 'reports#feedback'
   get 'newsroom' => 'newsroom#index'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
