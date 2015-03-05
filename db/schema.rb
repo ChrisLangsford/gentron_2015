@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150304124042) do
+ActiveRecord::Schema.define(version: 20150305165850) do
+
+  create_table "articles", force: true do |t|
+    t.string   "title"
+    t.string   "body"
+    t.string   "link"
+    t.string   "link_display_text"
+    t.string   "reference"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
