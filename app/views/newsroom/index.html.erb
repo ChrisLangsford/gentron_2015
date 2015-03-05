@@ -7,16 +7,9 @@
     <%=image_tag(a.image(:medium))%>
 
     <h2>
-      <%=a.title.capitalize%>      
-      
+      <%=a.title.capitalize%> 
     </h2>
-    <p><%= a.body%></p>
-    <%if a.link.present?%>
-    <%=link_to a.link_display_text, a.link%>
-    <%end%>
-    <%if a.reference.present?%>
-    <p><b>Reference</b></p>
-    <%=link_to a.reference.to_s, a.reference%>
-    <%end%>
+    <%= raw(a.body)%>
+
   </div>
 <%end%>
