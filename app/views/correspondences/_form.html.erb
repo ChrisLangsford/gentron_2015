@@ -7,7 +7,7 @@
     <%= f.input :last_name %>
     <%= f.input :company %>
     <%= f.input :designation %>
-    <%= f.input :contact_number %>
+    <%= f.input :contact_number, :input_html => { :maxlength => 10, }, hint: "999-999-9999" %>
     <%= f.input :email %>
     <%= f.input :industry %>
     <%= f.input :location %>

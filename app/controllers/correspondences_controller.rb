@@ -22,9 +22,12 @@ class CorrespondencesController < ApplicationController
 
   def create
     @correspondence = Correspondence.new(correspondence_params)
-    @correspondence.save
+    if @correspondence.save
     ContactMailer.contact_email(@correspondence).deliver
     redirect_to root_url
+    else
+      render 'new'
+    end
   end
 
   def update
