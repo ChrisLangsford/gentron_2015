@@ -8,8 +8,12 @@
 
     <h2>
       <%=a.title.capitalize%> 
-    </h2>
-    <%= raw(a.body)%>
-
+    </h2>    
+    <% preview = (a.body).lines.to_a%>
+    <%preview[0..4].each do |l|%>
+    <%= l.html_safe%>
+    <%end%>
+    <%= link_to "Read More", article_path(a), class: "btn btn-lg btn-success"%>
   </div>
+  <br>
 <%end%>

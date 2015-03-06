@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:show]
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
@@ -43,6 +43,6 @@ class ArticlesController < ApplicationController
     end
 
     def article_params
-      params.require(:article).permit(:title, :body, :image, :link, :link_display_text, :reference)
+      params.require(:article).permit(:title, :body, :image)
     end
 end
