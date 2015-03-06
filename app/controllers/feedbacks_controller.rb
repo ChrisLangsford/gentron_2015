@@ -1,6 +1,5 @@
 class FeedbacksController < ApplicationController
   before_action :set_feedback, only: [:show, :edit, :update, :destroy]
-  before_filter :protect_from_spam, :only => [:create]
 
   respond_to :html
 
@@ -24,6 +23,7 @@ class FeedbacksController < ApplicationController
   def create
     @feedback = Feedback.new(feedback_params)
     @feedback.save
+    FeedbackMailer.feedback_email(@feedback).deliver
     redirect_to root_url
   end
 
