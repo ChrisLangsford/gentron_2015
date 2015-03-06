@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company name:</strong>
+  <%= @feedback.company_name %>
+</p>
+
+<p>
+  <strong>Industry:</strong>
+  <%= @feedback.industry %>
+</p>
+
+<p>
+  <strong>Work description:</strong>
+  <%= @feedback.work_description %>
+</p>
+
+<p>
+  <strong>Feedback description:</strong>
+  <%= @feedback.feedback_description %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @feedback.rating %>
+</p>
+
+<%= link_to 'Back', feedbacks_path %>
