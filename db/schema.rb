@@ -11,14 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150306082017) do
+ActiveRecord::Schema.define(version: 20150306124850) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
-    t.text     "body",               limit: 2147483647
-    t.string   "link"
-    t.string   "link_display_text"
-    t.string   "reference"
+    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -42,6 +39,21 @@ ActiveRecord::Schema.define(version: 20150306082017) do
 
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable", using: :btree
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
+
+  create_table "correspondences", force: true do |t|
+    t.string   "corres_type"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "comapny"
+    t.string   "designation"
+    t.string   "contact_number"
+    t.string   "email"
+    t.string   "industry"
+    t.string   "location"
+    t.text     "additional_info"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "feedbacks", force: true do |t|
     t.string   "company_name"

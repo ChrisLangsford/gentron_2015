@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :correspondences
+
   resources :feedbacks
 
   mount Ckeditor::Engine => '/ckeditor'
