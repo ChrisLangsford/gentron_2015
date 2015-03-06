@@ -1,0 +1,13 @@
+<h1><%=@corres.corres_type%> Request!</h1>
+
+<%=@person%><br>
+<%=@corres.company%><br>
+<%=@corres.designation%><br>
+<%=@corres.contact_number%><br>
+<%=@corres.email%><br>
+<%=@corres.industry%><br>
+<%=@corres.location%><br>
+<%if @corres.additional_info.present?%>
+	<%= @corres.additional_info%>
+<%end%>
+<%=%><br>
