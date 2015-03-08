@@ -1,17 +1,20 @@
-<%= simple_form_for(@feedback) do |f| %>
-  <%= f.error_notification %>
+<div class="row well">
+  <div class="col-md-12">
+    <%= simple_form_for(@feedback) do |f| %>
+      <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :company_name %>
-    <%= f.input :industry %>
-    <%= f.input :work_description %>
-    <%= f.input :feedback_description %>
-    <%= f.input :rating, collection: 1..10, as: :radio_buttons, label_html: {class: "radio-inline"}, item_wrapper_class: "radio-inline" , hint: "(1-Very Poor, 10-Excellent)"%>
-  </div>
+      <div class="form-inputs">
+        <%= f.input :company_name %>
+        <%= f.input :industry %>
+        <%= f.input :work_description %>
+        <%= f.input :feedback_description %>
+        <%= f.input :rating, collection: 1..10, as: :radio_buttons, label_html: {class: "radio-inline"}, item_wrapper_class: "radio-inline" , hint: "(1-Very Poor, 10-Excellent)"%>
+      </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-    <%= link_to 'Back', feedbacks_path, class: "btn btn-link"%>
+      <div class="form-actions">
+        <%= f.button :submit, "Send"%>
+        <%= link_to 'Back', root_url, class: "btn btn-link"%>
+      </div>
+    <% end %>
   </div>
-<% end %>
-<br>
+</div>

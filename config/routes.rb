@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
-  resources :correspondences
 
-  resources :feedbacks
+  resources :articles
+  
+  resources :correspondences, except: [:index, :show, :edit, :update]
+
+  resources :feedbacks, except: [:edit, :update]
 
   mount Ckeditor::Engine => '/ckeditor'
-  resources :articles
 
   devise_for :users
   devise_scope :user do

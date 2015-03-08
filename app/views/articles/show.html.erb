@@ -5,7 +5,7 @@
     	<%if current_user.present?%>
 		<%= link_to 'Edit', edit_article_path(@article), class: "btn btn-md btn-warning" %> |
 		<%end%>
-		<%= link_to 'Back', articles_path, class: "btn btn-md-btn-default" %>
+		<%= link_to 'Back', :back, class: "btn btn-md-btn-default" %>
     </h2>    
 	<%= @article.body.html_safe%>
 </div>
