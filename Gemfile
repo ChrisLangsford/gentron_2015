@@ -36,7 +36,7 @@ gem "font-awesome-rails"
 gem 'seed_dump', '~> 3.2.0'
 gem 'twitter-bootstrap-rails'
 gem 'ckeditor'
-gem 'valid_email'
+gem 'valid_email' 	
 
 
 # Use ActiveModel has_secure_password
