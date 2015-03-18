@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   before_action :authenticate_user!, except: [:show]
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  layout 'dynamic'
 
   respond_to :html
 

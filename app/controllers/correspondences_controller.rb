@@ -1,5 +1,7 @@
 class CorrespondencesController < ApplicationController
   before_action :set_correspondence, only: [:show, :edit, :update, :destroy]
+    layout 'dynamic'
+
 
   respond_to :html
 
