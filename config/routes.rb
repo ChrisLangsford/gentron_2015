@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'solutions/index'
+
+  get 'about_us/index'
+
   resources :articles
   
   resources :correspondences, except: [:index, :show, :edit, :update]
