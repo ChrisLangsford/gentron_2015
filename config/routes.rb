@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   mount Ckeditor::Engine => '/ckeditor'
 
-  devise_for :users
+  devise_for :users, :controllers => {:sessions => "sessions"}
   devise_scope :user do
     get '/login' => 'devise/sessions#new'
     get '/logout' => 'devise/sessions#destroy'
