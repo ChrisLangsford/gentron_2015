@@ -1,9 +1,14 @@
 <footer class="main-footer">
-	<div class="grid_gutter">
-		<div class="gutter">
-			<div class="container">
-				<%=image_tag("logo2.png", height: "60", width: "auto")%>			
-			</div>
+	<div class="grid_gutter ">
+		<div class="gutter container">
+				<div class="navbar-default">
+					<%=image_tag("logo2.png", height: "60px", width: "auto", class: "nav navbar-nav navbar-left")%>
+					<ul class="nav navbar-nav navbar-right nav-bottom">
+						<li><a href="#">View our B-BBEE Certificate</a></li>
+						<li><a href="#">View our T's & C's</a></li>
+						<li><a href="#"data-toggle="modal" data-target="#loginModal">Staff Login</a></li>
+					</ul>
+				</div>
 		</div>		
 	</div>
 	<div class="contact-info">
@@ -50,7 +55,13 @@
 				<li>Copyright © 2015 Gentron</li>
 				<li>Site designed by Chris Langsford, Cameron Norman, Divash Singh</li>						
 			</ul>
-
 		</div>
 	</nav>	
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog"> 
+	<%=render "devise/sessions/new"%>                
+    </div>
+</div>
