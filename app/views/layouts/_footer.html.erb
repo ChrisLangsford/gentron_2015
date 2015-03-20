@@ -6,7 +6,12 @@
 					<ul class="nav navbar-nav navbar-right nav-bottom">
 						<li><a href="#">View our B-BBEE Certificate</a></li>
 						<li><a href="#">View our T's & C's</a></li>
-						<li><a href="#"data-toggle="modal" data-target="#loginModal">Staff Login</a></li>
+						<%if current_user.present?%>
+						<li><a style="pointer-events:none; cursor:default;">Logged in as: <b><%=current_user.email%></b></a></li>
+						<li><%=link_to "Log out", logout_path%></li>
+						<%else%>
+						<li><a href="#" data-toggle="modal" data-target="#loginModal">Staff Login</a></li>
+						<%end%>
 					</ul>
 				</div>
 		</div>		
