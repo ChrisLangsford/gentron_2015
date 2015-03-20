@@ -1,26 +1,3 @@
-<hr />
-<center>
-<p><strong>Phone: </strong>+27 (0)12 661 5519<br /><strong>Email: </strong><a href="mailto:info@gentron.co.za">info@gentron.co.za</a><br />8 Whitehall Street<br />
-Centurion<br />
-0157</p>
-</center>
-<center>
-	<a href="https://www.facebook.com/GentronGroup" target="_blank"><%=image_tag("social/fb.png", size: "50x50")%></a>
-	<a href="https://twitter.com/GentronGroup" target="_blank"><%=image_tag("social/twitter.png", size: "50x50")%></a>
-	<a href="http://www.linkedin.com/company/gentron-outsourced-services" target="_blank"><%=image_tag("social/link.png", size: "50x50")%></a>
-</center>
-<br />
-<center>
-
-<%if current_user.present?%>
-	Logged in as <b><%=current_user.email%></b><br>
-	<%= link_to "Log out",destroy_user_session_path%>
-<%else%>
-	<%= link_to "Staff Login", new_user_session_path%>
-<%end%>
-</p>
-</center>
-
 <footer class="main-footer">
 	<div class="grid_gutter">
 		<div class="gutter">
@@ -71,8 +48,9 @@ Centurion<br />
 		<div class="container">
 			<ul>
 				<li>Copyright © 2015 Gentron</li>
-				<li>Site designed by Chris Langsford, Cameron Norman, Divash Singh</li>	
+				<li>Site designed by Chris Langsford, Cameron Norman, Divash Singh</li>						
 			</ul>
+
 		</div>
 	</nav>	
 </footer>
