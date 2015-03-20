@@ -1,135 +1,116 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:100%; height: 600px">
+<script src="../js/solnav.js"></script>
+<a href="#" class="back-to-top">Back to Top</a>
+<div class="home-section" id="home">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:100%; height: 600px">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active" style="border-color: #000"></li>
         <li data-target="#myCarousel" data-slide-to="1" class="" style="border-color: #000"></li>
         <li data-target="#myCarousel" data-slide-to="2" class="" style="border-color: #000"></li>
+        <li data-target="#myCarousel" data-slide-to="3" class="" style="border-color: #000"></li>
+        <li data-target="#myCarousel" data-slide-to="4" class="" style="border-color: #000"></li>
+        <li data-target="#myCarousel" data-slide-to="5" class="" style="border-color: #000"></li>
+        <li data-target="#myCarousel" data-slide-to="6" class="" style="border-color: #000"></li>
       </ol>
       <div class="carousel-inner" role="listbox" style="width:100%; height:600px">
+
         <div class="item active">
           <%=image_tag("keyboard.jpg", class: "first-slide", width: "100%" , height: "auto", alt: "first-slide")%>
           <div class="container">
             <div class="container">
               <div class="carousel-caption">
                 <h1 style="font-weight: bold">Welcome.<br />To the New Gentron Site!</h1>
-                <p></p>
-                <p><%=link_to "New Solutions", solutions_index_path, class: "gtbn btn-lg btn-primary", role: "button"%></p>
               </div>
             </div>
           </div>
         </div>
+        <!-- solutions-->
         <div class="item">
-          <%=image_tag("support.jpg", class: "second-slide",  width: "100%" , height: "auto", alt: "second-slide")%>
+          <%=image_tag("keyboard.jpg", width: "100%", height: "auto", class: "second-slide", alt: "second-slide")%>
           <div class="container">
             <div class="container">
               <div class="carousel-caption">
-                <h1 style="font-weight: bold">Professional Support.<br />View our professional support solutions</h1>
-                <p></p>
-                <p><%=link_to "Professional Support Solutions", solutions_index_path, class: "btn btn-lg btn-success", role: "button"%></p>
+                <h1 style="font-weight: bold"> Solutions </h1>
+                <p>
+                Gentron has over 21 years of experience in the ICT industry. Ernest Skinner started the business in 1992 when he recognised the need for technology resellers that offer personalised service, instead of just being a drop-and-go supplier. We provide a complete range of solutions to meet our clients’ needs, including managed IT services, hardware and software. Over the years, we have come to know which solutions work and which ones don’t, what businesses and educational institutions need to function, and what’s unnecessary for them to have.
+          		<br /><br />
+		        Our clients are of utmost importance to us and we go above and beyond to make sure we provide them with the best services possible, and we will do the same for you. We don't just sell the technology, we determine what your needs are and provide you with workable solutions that will make your business or educational institution work more efficiently.
+		        </p>
               </div>
             </div>
           </div>
         </div>
+        <!-- Infra solutions-->
         <div class="item">
-          <%=image_tag("itcloud.jpg", class: "third-slide",  width: "100%" , height: "auto", alt: "Third-slide")%>
+          <%=image_tag("nav/infra.jpg", width: "100%", height: "auto", class: "second-slide", alt: "second-slide")%>
           <div class="container">
             <div class="container">
               <div class="carousel-caption">
-                <h1 style="font-weight: bold">Cloud Computing.<br />Pamjola Cloud Solution</h1>
-                <p></p>
-                <p><%=link_to "View Our cloud solutions", solutions_index_path, class: "btn btn-lg btn-warning", role: "button"%></p>
+                <h1 style="font-weight: bold"> Infrastructure Solutions </h1>
+                <p>
+                Today’s working environment has become so digital that having ICT solutions in place is vital. Our process for putting infrastructure in place is meant to find the most cost-effective solution that will meet your needs. We start by doing a site survey and having a strategic discussion with you on where you see your business in 2-5 years. We then go on to analyse your data, security programmes and firewalls to ensure solutions that work efficiently and securely. 
+		        </p>
               </div>
             </div>
           </div>
         </div>
+        <!-- support solutions-->
+        <div class="item">
+          <%=image_tag("nav/support.jpg", width: "100%", height: "auto", class: "second-slide", alt: "second-slide")%>
+          <div class="container">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 style="font-weight: bold"> Professional Support </h1>
+                <p>
+                Today’s working environment has become so digital that having ICT solutions in place is vital. Our process for putting infrastructure in place is meant to find the most cost-effective solution that will meet your needs. We start by doing a site survey and having a strategic discussion with you on where you see your business in 2-5 years. We then go on to analyse your data, security programmes and firewalls to ensure solutions that work efficiently and securely.
+		        </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- strategic consulting solutions-->
+        <div class="item">
+          <%=image_tag("nav/consulting.jpg", width: "100%", height: "auto", class: "second-slide", alt: "second-slide")%>
+          <div class="container">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 style="font-weight: bold"> Strategic consulting </h1>
+                <p>
+                Today’s working environment has become so digital that having ICT solutions in place is vital. Our process for putting infrastructure in place is meant to find the most cost-effective solution that will meet your needs. We start by doing a site survey and having a strategic discussion with you on where you see your business in 2-5 years. We then go on to analyse your data, security programmes and firewalls to ensure solutions that work efficiently and securely.
+		        </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  cloud solutions-->
+        <div class="item">
+          <%=image_tag("nav/cloud.jpg", width: "100%", height: "auto", class: "second-slide", alt: "second-slide")%>
+          <div class="container">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 style="font-weight: bold"> Cloud Computing </h1>
+                <p>
+                Today’s working environment has become so digital that having ICT solutions in place is vital. Our process for putting infrastructure in place is meant to find the most cost-effective solution that will meet your needs. We start by doing a site survey and having a strategic discussion with you on where you see your business in 2-5 years. We then go on to analyse your data, security programmes and firewalls to ensure solutions that work efficiently and securely.
+		        </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- training  solutions-->
+        <div class="item">
+          <%=image_tag("nav/training.jpg", width: "100%", height: "auto", class: "second-slide", alt: "second-slide")%>
+          <div class="container">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 style="font-weight: bold"> Orientation Training </h1>
+                <p>
+                Today’s working environment has become so digital that having ICT solutions in place is vital. Our process for putting infrastructure in place is meant to find the most cost-effective solution that will meet your needs. We start by doing a site survey and having a strategic discussion with you on where you see your business in 2-5 years. We then go on to analyse your data, security programmes and firewalls to ensure solutions that work efficiently and securely.
+		        </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
-
-
-	    	<div class="col-lg-12">
-	    		<%=link_to solutions_index_path do%>
-            <div class="panel panel-default" style="float: left; margin-left:0.3%; width: 24.7%">
-  				    <div class="panel-body-a">
-  				      <%=image_tag("nav/infra.jpg", width: "100%")%>
-                <br /><br />
-                <div class="panel-footer-a"><center>Infrastructure Solutions</center></div>
-                <br />
-  				    </div>
-				    </div>
-          	<%end%> 
-          <%=link_to solutions_index_path do%>
-            <div class="panel panel-default" style="float: left; margin-left:0.3%; width: 24.7%">
-              <div class="panel-body-a">
-                <%=image_tag("nav/support.jpg", width: "100%")%>
-                <br /><br />
-                <div class="panel-footer-a"><center>Professional Support</center></div>
-                <br />
-              </div>
-            </div>
-            <%end%>
-          <%=link_to solutions_index_path do%>
-            <div class="panel panel-default" style="float: left; margin-left:0.3%; width: 24.7%">
-              <div class="panel-body-a">
-                <%=image_tag("nav/cloud.jpg", width: "100%")%>
-                <br /><br />
-                <div class="panel-footer-a"><center>Cloud Computing</center></div>
-                <br />
-              </div>
-            </div>
-          <%end%>
-          <%=link_to solutions_index_path do%>
-            <div class="panel panel-default" style="float: left; margin-left:0.3%; width: 24.7%">
-              <div class="panel-body-a">
-                <%=image_tag("nav/consulting.jpg", width: "100%")%>
-                <br /><br />
-                <div class="panel-footer-a"><center>Strategic Consulting</center></div>
-                <br />
-              </div>
-            </div>
-          <%end%>       
-        </div>
-        <div class="col-lg-12">
-          <%=link_to solutions_index_path do%>
-            <div class="panel panel-default" style="float: left; margin-left:0.3%; width: 24.7%">
-              <div class="panel-body-a">
-                <%=image_tag("nav/training.jpg", width: "100%")%>
-                <br /><br />
-                <div class="panel-footer-a"><center>Orientation Training</center></div>
-                <br />
-              </div>
-            </div>
-          <%end%>  
-          <%=link_to solutions_index_path do%>
-            <div class="panel panel-default" style="float: left; margin-left:0.3%; width: 24.7%">
-              <div class="panel-body-a">
-                <%=image_tag("nav/brands.png", width: "100%")%>
-                <br /><br />
-                <div class="panel-footer-a"><center>Brands and Software</center></div>
-                <br />
-              </div>
-            </div>
-          <%end%>
-          <%=link_to solutions_index_path do%>
-            <div class="panel panel-default" style="float: left; margin-left:0.3%; width: 24.7%">
-              <div class="panel-body-a">
-                <%=image_tag("nav/Pamoja.png", width: "100%")%>
-                <br /><br />
-                <div class="panel-footer-a"><center>Pamoja Cloud</center></div>
-                <br />
-              </div>
-            </div>
-          <%end%>
-          <%=link_to solutions_index_path do%>
-            <div class="panel panel-default" style="float: left; margin-left:0.3%; width: 24.7%">
-              <div class="panel-body-a">
-                <%=image_tag("nav/modern.png", width: "100%")%>
-                <br /><br />
-                <div class="panel-footer-a"><center>Get Modern</center></div>
-                <br />
-              </div>
-            </div> 
-          <%end%>       
-        </div>
-
-	</div>  	
-</div> 
+</div>

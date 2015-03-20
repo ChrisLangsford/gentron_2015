@@ -11,8 +11,7 @@ Centurion<br />
 </center>
 <br />
 <center>
-<p>Copyright © 2015 Gentron | Site designed by Cameron Norman, Chris Langsford, Divash Singh</p>
-<p>
+
 <%if current_user.present?%>
 	Logged in as <b><%=current_user.email%></b><br>
 	<%= link_to "Log out",destroy_user_session_path%>
@@ -21,3 +20,59 @@ Centurion<br />
 <%end%>
 </p>
 </center>
+
+<footer class="main-footer">
+	<div class="grid_gutter">
+		<div class="gutter">
+			<div class="container">
+				<%=image_tag("logo2.png", height: "60", width: "auto")%>			
+			</div>
+		</div>		
+	</div>
+	<div class="contact-info">
+		<div class="container">
+		<div class="col-lg-10 col-lg-offset-3">
+			<div class="contact-info-item">
+			<nav>
+				<dl class="nav-contact">
+					<dt class="nav-contact-heading">Drop us a mail</dt>
+					<dd class="nav-contact-item"><a href="mailto:info@gentron.co.za">info@gentron.co.za</a></dd>
+					<dt class="nav-contact-heading">Other Places</dt>
+					<dd>
+						<ul class="nav-social">
+							<li><a href="https://www.facebook.com/GentronGroup" target="_blank"><%=image_tag("social/fb.png", class: "nav-social-link")%></a></li>
+							<li><a href="https://twitter.com/GentronGroup" target="_blank"><%=image_tag("social/twitter.png", class: "nav-social-link")%></a></li>
+							<li><a href="http://www.linkedin.com/company/gentron-outsourced-services" target="_blank"><%=image_tag("social/link.png", class: "nav-social-link")%></a></li>
+						</ul>
+					</dd>
+				</dl>
+			</nav>			
+			</div>
+			<div class="contact-info-item">
+				<h1>Gauteng</h1>
+				<address>
+					<i class="fa fa-map-marker"></i>
+					<a target="_blank" href="#">
+						8 Whitehall street<br>
+						Centurion<br>
+						0157<br>
+					</a>
+				</address>	
+				<p>
+					<i class="fa fa-mobile"></i>
+					<a href="tel:+27126615519">+27 (0)12 661 5519</a>
+				</p>			
+			</div>			
+			
+		</div>
+		</div>
+	</div>
+	<nav class="terms">
+		<div class="container">
+			<ul>
+				<li>Copyright © 2015 Gentron</li>
+				<li>Site designed by Chris Langsford, Cameron Norman, Divash Singh</li>	
+			</ul>
+		</div>
+	</nav>	
+</footer>

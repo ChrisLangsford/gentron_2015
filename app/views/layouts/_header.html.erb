@@ -6,11 +6,9 @@
             <span class = "icon-bar"></span>
             <span class = "icon-bar"></span>
           </button>
-        <div class = "collapse navbar-collapse navHeaderCollapse">
+        <div class = "collapse navbar-collapse navHeaderCollapse ">
             <ul class = "nav navbar-nav" style="width: 100%; margin-left:15%; margin-right:15%">
               <li><%= link_to root_url do%><%=image_tag("logo2.png", class: "nav-logo")%><%end%></li>
-              <li style="margin-top: 1.5%"><%=link_to "About Us", about_us_index_path%></li>
-              <li style="margin-top: 1.5%"><%= link_to "Solutions", solutions_index_path%></li>
               <li style="margin-top: 1.5%"><%=link_to "Newsroom", newsroom_path, "data-no-turbolink" => true%></li>
               <li class="dropdown" style="margin-top: 1.5%">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact Us <span class="caret"></span></a>
@@ -20,7 +18,6 @@
                 <li><%=link_to "Provide us with feedback", new_feedback_path,"data-no-turbolink" => true %></li>                
               </ul>
             </li>
-              <li style="margin-top: 1.5%"><a href="contactus.php"><i class="fa fa-search"></i></a></li>
             </ul>
         </div>
       </div>
