@@ -8,8 +8,6 @@
 
 <%@articles.each do |a|%>
   <div>
-    <%=image_tag(a.image, class: "article-image")%>
-
     <h2>
       <%=a.title.capitalize%>
       <%= link_to article_path(a), class: "btn btn-sm btn-default" do%>
@@ -24,7 +22,10 @@
         <span class="fa fa-trash"></span>
         Delete
         <%end%> 
-    </h2>    
+    </h2>
+    <br>    
+    <%=image_tag(a.image(:medium))%>
+
     <% preview = (a.body).lines.to_a%>
     <%preview[0..4].each do |l|%>
     <%= l.html_safe%>

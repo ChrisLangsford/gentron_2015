@@ -4,11 +4,12 @@
 
 <%@articles.each do |a|%>
   <div class="newsroom-section">
-    <%=image_tag(a.image, class: "article-image")%>
-
     <h2>
       <%=a.title.capitalize%> 
-    </h2>    
+    </h2>   
+    <br> 
+    <%=image_tag(a.image, class: "article-image")%>
+
     <% preview = (a.body).lines.to_a%>
     <%preview[0..4].each do |l|%>
     <%= l.html_safe%>
