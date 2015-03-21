@@ -25,7 +25,7 @@ class FeedbacksController < ApplicationController
   def create
     @feedback = Feedback.new(feedback_params)
     if @feedback.save_with_captcha
-      FeedbackMailer.feedback_email(@feedback).deliver
+      #FeedbackMailer.feedback_email(@feedback).deliver
       redirect_to root_url
     else
       render "new"
