@@ -14,6 +14,12 @@ body {
 	padding-top: 0;
 }
 
+.newsroom-section {
+	background-color: #FFF;
+	padding-bottom: 6em;
+	padding-top: 0;
+}
+
 .home-section-alt {
 	background-color: #eee;
 	text-align: center;
@@ -160,4 +166,7 @@ nav ul {
 	margin-bottom: 0.4em; 
 }
 
-
+.article-image {
+	height:auto;
+	width: 100%;
+}

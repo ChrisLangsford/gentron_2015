@@ -3,8 +3,8 @@
 </h1>
 
 <%@articles.each do |a|%>
-  <div>
-    <%=image_tag(a.image(:medium))%>
+  <div class="newsroom-section">
+    <%=image_tag(a.image, class: "article-image")%>
 
     <h2>
       <%=a.title.capitalize%> 

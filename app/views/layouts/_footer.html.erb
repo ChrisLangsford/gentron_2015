@@ -7,7 +7,7 @@
 						<li><%=link_to "View our T's & C's", '/docs/Terms and Conditions.pdf', target: "_blank"%></li>
 						<li><%=link_to "View our B-BBEE Certificate", '/docs/Gentron_BBBEE.pdf', target: "_blank"%></li>
 						<%if current_user.present?%>
-						<li><a style="pointer-events:none; cursor:default;">Logged in as: <b><%=current_user.email%></b></a></li>
+						<li><%=link_to staff_path do %>Logged in as: <b><%=current_user.email%></b><%end%></li>
 						<li><%=link_to "Log out", logout_path%></li>
 						<%else%>
 						<li><a href="#" data-toggle="modal" data-target="#loginModal">Staff Login</a></li>

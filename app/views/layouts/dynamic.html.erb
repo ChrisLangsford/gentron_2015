@@ -10,13 +10,11 @@
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
   </head>
-
   <body>
 <%= render "layouts/header"%>
 <div class="container">
   <%= bootstrap_flash%>
-  <%= yield %>
-  
+  <%= yield %>  
 </div>
 <%= render "layouts/footer"%>
  
