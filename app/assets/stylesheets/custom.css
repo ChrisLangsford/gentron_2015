@@ -170,3 +170,7 @@ nav ul {
 	height:auto;
 	width: 100%;
 }
+
+.nav-link {
+	margin-top: 1.5%;
+}
