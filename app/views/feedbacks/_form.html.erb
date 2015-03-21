@@ -9,6 +9,7 @@
         <%= f.input :work_description %>
         <%= f.input :feedback_description %>
         <%= f.input :rating, collection: 1..10, as: :radio_buttons, label_html: {class: "radio-inline"}, item_wrapper_class: "radio-inline" , hint: "(1-Very Poor, 10-Excellent)"%>
+        <%= f.simple_captcha(:object=>"feedback",:label => "Are you a human?") %>
       </div>
 
       <div class="form-actions">

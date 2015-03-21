@@ -48,6 +48,6 @@ class CorrespondencesController < ApplicationController
     end
 
     def correspondence_params
-      params.require(:correspondence).permit(:corres_type, :first_name, :last_name, :company, :designation, :contact_number, :email, :industry, :location, :additional_info)
+      params.require(:correspondence).permit(:corres_type, :first_name, :last_name, :company, :designation, :contact_number, :email, :industry, :location, :additional_info, :captcha, :captcha_key)
     end
 end

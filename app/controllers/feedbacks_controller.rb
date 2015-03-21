@@ -24,7 +24,7 @@ class FeedbacksController < ApplicationController
 
   def create
     @feedback = Feedback.new(feedback_params)
-    if @feedback.save
+    if @feedback.save_with_captcha
       FeedbackMailer.feedback_email(@feedback).deliver
       redirect_to root_url
     else
@@ -48,6 +48,6 @@ class FeedbacksController < ApplicationController
     end
 
     def feedback_params
-      params.require(:feedback).permit(:company_name, :industry, :work_description, :feedback_description, :rating)
+      params.require(:feedback).permit(:company_name, :industry, :work_description, :feedback_description, :rating, :captcha, :captcha_key)
     end
 end

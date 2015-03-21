@@ -1,4 +1,5 @@
 class Correspondence < ActiveRecord::Base
+	apply_simple_captcha
 
 	validates 	:first_name, 
 				:last_name, 
