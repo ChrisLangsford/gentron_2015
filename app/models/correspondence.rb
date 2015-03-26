@@ -11,8 +11,9 @@ class Correspondence < ActiveRecord::Base
 				:location, 
 				presence: true
 
-	validates_format_of :contact_number, {:with => /\A\d{3}-\d{3}-\d{4}\z/ , message: "Not a valid phone number"}
-	validates :contact_number, numericality: true
+	validates :contact_number, {presence: {message: "Not a valid phone number"},
+								numericality: true,
+								length: {minimum: 10, maximum: 15}}
 	validates :email, email: true
 
 	def self.types
