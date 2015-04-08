@@ -1,5 +1,4 @@
 <div>
-    <%=image_tag(@article.image, class: "article-image")%>
     <h2>
     	<%=@article.title.capitalize%> 
     	<%if current_user.present?%>
@@ -11,6 +10,7 @@
 		<%end%>
 		<%= link_to 'Back', :back, class: "btn btn-md-btn-default" %>
     </h2>    
+    <%=image_tag(@article.image, class: "article-image")%>
 	<%= @article.body.html_safe%>
 </div>
 <br>
