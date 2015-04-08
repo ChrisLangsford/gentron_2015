@@ -8,8 +8,13 @@
           </button>
         <div class = "collapse navbar-collapse navHeaderCollapse ">
             <ul class = "nav navbar-nav" style="width: 100%; margin-left:15%; margin-right:15%">
+<<<<<<< HEAD
               <li><%= link_to root_url do%><%=image_tag("logo2.png", class: "nav-logo")%><%end%></li>              
               <li class="nav-link"><%=link_to "Home", root_path, "data-no-turbolink" => true%></li>
+=======
+              <li><%= link_to root_url do%><%=image_tag("logo2.png", class: "nav-logo")%><%end%></li>
+              <li class="nav-link"><%= link_to "Home", root_url, "data-no-turbolink" => true%></li>
+>>>>>>> fd7d9884647061ee8d226ff740187dead971203c
               <li class="nav-link"><%=link_to "Newsroom", newsroom_path, "data-no-turbolink" => true%></li>
               <li class="nav-link"><%=link_to "Request a Quote/Consultation", new_correspondence_path,"data-no-turbolink" => true%></li>
               <li class="nav-link"><%=link_to "Provide us with feedback", new_feedback_path,"data-no-turbolink" => true %></li>              
