@@ -180,3 +180,7 @@ nav ul {
 .nav-link {
 	margin-top: 1.5%;
 }
+
+ol li {
+	font-size: 1.2em;
+}
