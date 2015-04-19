@@ -1,7 +1,15 @@
-<h1>You got feedback!</h1>
+<h1>New Feedback Story</h1>
 
-<%=@feedback.company_name%><br>
-<%=@feedback.industry%><br>
-<%=@feedback.work_description%><br>
-<%=@feedback.feedback_description%><br>
-<%=@feedback.rating.to_s%>
+<p>Good day</p><br>
+
+<p>You have received new customer feedback</p>
+
+<p>Company name: <%=@feedback.company_name%></p><br/>
+
+<p>Industry: <%=@feedback.industry%></p><br/>
+
+<p>Work description: <%=@feedback.work_description%></p><br/>
+
+<p>Feedback description: <%=@feedback.feedback_description%></p><br/>
+
+<p>Feedback rating: <%=@feedback.rating%></p><br/>

@@ -1,13 +1,14 @@
-<h1><%=@corres.corres_type%> Request!</h1>
+<h1>Good Day</h1>
 
-<%=@person%><br>
-<%=@corres.company%><br>
-<%=@corres.designation%><br>
-<%=@corres.contact_number%><br>
-<%=@corres.email%><br>
-<%=@corres.industry%><br>
-<%=@corres.location%><br>
+<p>You have a new request for a <b><%= @corres.corres_type%></b></p>
+<p>Here are the client's details:</p>
+<p>Name: <%= @person%></p>
+<p>Company: <%=@corres.company%></p>
+<p>Designation: <%=@corres.designation%></p>
+<p>Contact Number: <%=@corres.contact_number%></p>
+<p>Email: <%=@corres.email%></p>
+<p>Industry: <%=@corres.industry%></p>
+<p>Location: <%=@corres.location%></p>
 <%if @corres.additional_info.present?%>
-	<%= @corres.additional_info%>
+<p>Additional Info: <%=@corres.additional_info%></p>
 <%end%>
-<%=%><br>
