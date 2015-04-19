@@ -46,6 +46,7 @@ gem 'simple_captcha2', require: 'simple_captcha'
 # Use unicorn as the app server
 gem 'unicorn'
 gem 'rails_12factor', group: :production
+#gem "linkedin-oauth2", "~> 1.0"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

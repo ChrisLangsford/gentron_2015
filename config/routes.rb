@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   get 'newsroom' => 'newsroom#index'
 
   get 'email-disclaimer' => 'disclaimer#index'
+  get 'team' => 'team#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
