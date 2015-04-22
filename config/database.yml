@@ -13,7 +13,6 @@ default: &default
   adapter: postgresql
   encoding: utf8
   pool: 5
-  host: localhost
   username: 
   password: 
   socket: /var/run/mysqld/mysqld.sock
@@ -50,6 +49,7 @@ test:
 #
 production:
   <<: *default
+  host: localhost
   database: gentron_2015_production
   username: gentron_2015
   password: <%= ENV['GENTRON_2015_DATABASE_PASSWORD'] %>
