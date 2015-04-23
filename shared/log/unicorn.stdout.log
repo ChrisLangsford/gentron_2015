@@ -1,0 +1,209 @@
+Started GET "/" for 105.184.194.105 at 2015-04-22 09:33:15 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/static (116.6ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered about_us/_index.html.erb (2.2ms)
+  Rendered welcome/_brands.html.erb (2.1ms)
+PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 5:                WHERE a.attrelid = '"users"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"users"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  Rendered layouts/_footer.html.erb (12.4ms)
+Completed 500 Internal Server Error in 161ms
+
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 5:                WHERE a.attrelid = '"users"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"users"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+    13: 						<%else%>
+    14: 						<li><a href="#" data-toggle="modal" data-target="#loginModal">Staff Login</a></li>
+    15: 						<%end%>
+    16: 						<%if User.count == 0 %>
+    17: 						<li><%=link_to "Sing up", new_user_registration_path%></li>
+    18: 						<%end%>
+    19: 					</ul>
+  app/views/layouts/_footer.html.erb:16:in `_app_views_layouts__footer_html_erb__827865902__571075758'
+  app/views/layouts/static.html.erb:39:in `_app_views_layouts_static_html_erb___364875602__588095438'
+
+
+Started GET "/" for 105.184.194.105 at 2015-04-22 09:33:23 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/static (11.6ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered about_us/_index.html.erb (4.2ms)
+  Rendered welcome/_brands.html.erb (4.5ms)
+PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 5:                WHERE a.attrelid = '"users"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"users"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  Rendered layouts/_footer.html.erb (19.3ms)
+Completed 500 Internal Server Error in 113ms
+
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 5:                WHERE a.attrelid = '"users"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"users"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+    13: 						<%else%>
+    14: 						<li><a href="#" data-toggle="modal" data-target="#loginModal">Staff Login</a></li>
+    15: 						<%end%>
+    16: 						<%if User.count == 0 %>
+    17: 						<li><%=link_to "Sing up", new_user_registration_path%></li>
+    18: 						<%end%>
+    19: 					</ul>
+  app/views/layouts/_footer.html.erb:16:in `_app_views_layouts__footer_html_erb__827865902__570902018'
+  app/views/layouts/static.html.erb:39:in `_app_views_layouts_static_html_erb___364875602__588095168'
+
+
+Started GET "/" for 105.184.194.105 at 2015-04-22 09:34:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/static (1.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered about_us/_index.html.erb (1.0ms)
+  Rendered welcome/_brands.html.erb (1.3ms)
+PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 5:                WHERE a.attrelid = '"users"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"users"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 5:                WHERE a.attrelid = '"users"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"users"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+    13: 						<%else%>
+    14: 						<li><a href="#" data-toggle="modal" data-target="#loginModal">Staff Login</a></li>
+    15: 						<%end%>
+    16: 						<%if User.count == 0 %>
+    17: 						<li><%=link_to "Sing up", new_user_registration_path%></li>
+    18: 						<%end%>
+    19: 					</ul>
+  app/views/layouts/_footer.html.erb:16:in `_app_views_layouts__footer_html_erb__827865902__571075758'
+  app/views/layouts/static.html.erb:39:in `_app_views_layouts_static_html_erb___364875602__588095438'
+
+
+Started GET "/" for 105.184.194.105 at 2015-04-22 09:36:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/static (22.3ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered about_us/_index.html.erb (4.7ms)
+  Rendered welcome/_brands.html.erb (4.8ms)
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/sessions/_new.html.erb (105.5ms)
+  Rendered layouts/_footer.html.erb (138.2ms)
+Completed 200 OK in 263ms (Views: 231.5ms | ActiveRecord: 10.5ms)
+Started GET "/" for 105.184.194.105 at 2015-04-22 09:36:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/static (22.9ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered about_us/_index.html.erb (7.1ms)
+  Rendered welcome/_brands.html.erb (4.5ms)
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/_new.html.erb (95.6ms)
+  Rendered layouts/_footer.html.erb (126.7ms)
+Completed 200 OK in 236ms (Views: 216.5ms | ActiveRecord: 9.1ms)
+Started GET "/javascripts/vendor/modernizr.js" for 105.184.194.105 at 2015-04-22 09:36:45 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/vendor/modernizr.js"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /home/deployer/.rbenv/versions/2.1.2/bin/unicorn:23:in `load'
+  /home/deployer/.rbenv/versions/2.1.2/bin/unicorn:23:in `<main>'
+
+
+Started GET "/js/solnav.js" for 105.184.194.105 at 2015-04-22 09:36:45 -0400
+
+ActionController::RoutingError (No route matches [GET] "/js/solnav.js"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /home/deployer/.rbenv/versions/2.1.2/bin/unicorn:23:in `load'
+  /home/deployer/.rbenv/versions/2.1.2/bin/unicorn:23:in `<main>'
+
+
+Started GET "/assets/default-c88d1f8b07c6aea9f38fdc43fb1294b4.jpg" for 105.184.194.105 at 2015-04-22 09:36:46 -0400
+Started GET "/assets/it_image-c92e41838313b2acc821b0580f9c4822.jpg" for 105.184.194.105 at 2015-04-22 09:37:38 -0400
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for 105.184.194.105 at 2015-04-22 09:37:38 -0400
+Started GET "/assets/infrustructure-f5468a408282b4c41248b1d72dd5e0de.jpg" for 105.184.194.105 at 2015-04-22 09:37:38 -0400
+Started GET "/assets/consulting-db7a1ef7befc263bcd7cf1f90543aba3.jpg" for 105.184.194.105 at 2015-04-22 09:37:38 -0400
+Started GET "/assets/training-3ddcca250f88b5d8c421b55eeb8a7cb2.jpg" for 105.184.194.105 at 2015-04-22 09:37:47 -0400
+Started GET "/assets/keyboard.jpg" for 105.184.194.105 at 2015-04-22 09:38:32 -0400

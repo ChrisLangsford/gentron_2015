@@ -1,0 +1,20 @@
+<h1 class="page-header">
+  Newsroom  
+</h1>
+
+<%@articles.each do |a|%>
+  <div class="newsroom-section">
+    <h2>
+      <%=a.title.capitalize%> 
+    </h2>   
+    <br> 
+    <%=image_tag(a.image, class: "article-image")%>
+
+    <% preview = (a.body).lines.to_a%>
+    <%preview[0..4].each do |l|%>
+    <%= l.html_safe%>
+    <%end%>
+    <%= link_to "Read More", article_path(a), class: "btn btn-lg btn-success"%>
+  </div>
+  <br>
+<%end%>

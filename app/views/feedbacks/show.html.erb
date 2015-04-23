@@ -1,0 +1,11 @@
+<h1 class="page-header">
+  Feedback from <%=@feedback.company_name%> | <%= link_to "Back", :back%>
+  <span><h5><%=@feedback.created_at.strftime("%d-%B-%Y")%></h5></span>
+</h1>
+
+<b>Industry: </b><%=@feedback.industry%><br>
+<b>Rating: </b><%=@feedback.rating%><br>
+<b>Work Description: </b><%=@feedback.work_description%><br>
+<b>Feedback Description: </b><%=@feedback.feedback_description%><br>
+
+

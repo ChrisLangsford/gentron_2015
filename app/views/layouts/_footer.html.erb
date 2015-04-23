@@ -1,0 +1,76 @@
+<footer class="main-footer">
+	<div class="grid_gutter ">
+		<div class="gutter container">
+				<div class="navbar-default">
+					<%=image_tag("logo2.png", height: "60px", width: "auto", class: "nav navbar-nav navbar-left")%>
+					<ul class="nav navbar-nav navbar-right nav-bottom">
+						<li><%=link_to "View our T's & C's", '/docs/Terms and Conditions.pdf', target: "_blank"%></li>
+						<li><%=link_to "View our B-BBEE Certificate", '/docs/Gentron_BBBEE.pdf', target: "_blank"%></li>
+						<li><%=link_to "Email Disclaimer", email_disclaimer_path%></li>
+						<%if current_user.present?%>
+						<li><%=link_to staff_path do %>Logged in as: <b><%=current_user.email%></b><%end%></li>
+						<li><%=link_to "Log out", logout_path%></li>
+						<%else%>
+						<li><a href="#" data-toggle="modal" data-target="#loginModal">Staff Login</a></li>
+						<%end%>
+						<%if User.count == 0 %>
+						<li><%=link_to "Sing up", new_user_registration_path%></li>
+						<%end%>
+					</ul>
+				</div>
+		</div>		
+	</div>
+	<div class="contact-info">
+		<div class="container">
+		<div class="col-lg-10 col-lg-offset-3">
+			<div class="contact-info-item">
+			<nav>
+				<dl class="nav-contact">
+					<dt class="nav-contact-heading">Drop us a mail</dt>
+					<dd class="nav-contact-item"><a href="mailto:info@gentron.co.za">info@gentron.co.za</a></dd>
+					<dt class="nav-contact-heading">Other Places</dt>
+					<dd>
+						<ul class="nav-social">
+							<li><a href="https://www.facebook.com/GentronGroup" target="_blank"><%=image_tag("social/fb.png", class: "nav-social-link")%></a></li>
+							<li><a href="https://twitter.com/GentronGroup" target="_blank"><%=image_tag("social/twitter.png", class: "nav-social-link")%></a></li>
+							<li><a href="http://www.linkedin.com/company/gentron-outsourced-services" target="_blank"><%=image_tag("social/link.png", class: "nav-social-link")%></a></li>
+						</ul>
+					</dd>
+				</dl>
+			</nav>			
+			</div>
+			<div class="contact-info-item">
+				<h1>Gauteng</h1>
+				<address>
+					<i class="fa fa-map-marker"></i>
+					<a target="_blank" href="http://goo.gl/maps/HcUXN">
+						8 Whitehall street<br>
+						Centurion<br>
+						0157<br>
+					</a>
+				</address>	
+				<p>
+					<i class="fa fa-mobile"></i>
+					<a href="tel:+27126615519">+27 (0)12 661 5519</a>
+				</p>			
+			</div>			
+			
+		</div>
+		</div>
+	</div>
+	<nav class="terms">
+		<div class="container">
+			<ul>
+				<li>Copyright © 2015 Gentron</li>
+				<li>Site designed by Chris Langsford, Cameron Norman, Divash Singh</li>						
+			</ul>
+		</div>
+	</nav>	
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog"> 
+	<%=render "devise/sessions/new"%>                
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<h1 class="page-header">
+  Newsroom Articles
+  <%=link_to new_article_path, class: "btn btn-success" do%>
+   <span class="fa fa-plus"></span>
+  New
+  <%end%>
+</h1>
+
+<%@articles.each do |a|%>
+  <div>
+    <h2>
+      <%=a.title.capitalize%>
+      <%= link_to article_path(a), class: "btn btn-sm btn-default" do%>
+      <span class="fa fa-search"></span>
+      Show
+      <%end%>
+      <%=link_to edit_article_path(a), class: "btn btn-sm btn-default" do %>
+          <span class="fa fa-pencil"></span>
+          Edit
+        <%end%>
+        <%= link_to a, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-default" do%>
+        <span class="fa fa-trash"></span>
+        Delete
+        <%end%> 
+    </h2>
+    <br>    
+    <%=image_tag(a.image(:medium))%>
+
+    <% preview = (a.body).lines.to_a%>
+    <%preview[0..4].each do |l|%>
+    <%= l.html_safe%>
+    <%end%>    
+  </div>
+  <hr>
+  <br>
+<%end%>
+
+

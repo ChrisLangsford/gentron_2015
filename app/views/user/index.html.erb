@@ -1,0 +1,33 @@
+<h1>
+	Staff with website access
+	<%= link_to new_user_path, class: "btn btn-success" do%>
+	<span class="fa fa-plus"></span>
+	New user
+	<%end%>
+</h1>
+
+<div>
+	<table class="table table-bordered">
+		<thead>
+			<th>Email</th>
+			<th>Options</th>
+		</thead>
+		<tbody>
+			<%@users.each do |u|%>
+
+			<%me = false%>
+			<%me = (current_user == u) ? true : false%>
+
+			<tr>
+				<td><%=u.email%></td>
+				<td>
+					<%= link_to "Edit", edit_user_path(u), class: (me ? "btn btn-xs btn-warning disabled" : "btn btn-xs btn-warning ") %>
+					<%= link_to u, method: :delete, data: {confrim: "Are you sure?"}, class: (me ? "btn btn-xs btn-danger disabled" : "btn btn-xs btn-danger ") do%>
+					Delete Account
+					<%end%>
+				</td>
+			</tr>
+			<%end%>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,41 @@
+<h1>Listing correspondences</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Company</th>
+      <th>Designation</th>
+      <th>Contact number</th>
+      <th>Email</th>
+      <th>Industry</th>
+      <th>Location</th>
+      <th>Additional info</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @correspondences.each do |correspondence| %>
+      <tr>
+        <td><%= correspondence.first_name %></td>
+        <td><%= correspondence.last_name %></td>
+        <td><%= correspondence.company %></td>
+        <td><%= correspondence.designation %></td>
+        <td><%= correspondence.contact_number %></td>
+        <td><%= correspondence.email %></td>
+        <td><%= correspondence.industry %></td>
+        <td><%= correspondence.location %></td>
+        <td><%= correspondence.additional_info %></td>
+        <td><%= link_to 'Show', correspondence %></td>
+        <td><%= link_to 'Edit', edit_correspondence_path(correspondence) %></td>
+        <td><%= link_to 'Destroy', correspondence, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Correspondence', new_correspondence_path %>

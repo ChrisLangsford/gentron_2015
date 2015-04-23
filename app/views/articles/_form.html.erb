@@ -1,0 +1,13 @@
+<div class="well row">	
+	<div class=" col-md-12">	
+		<%= simple_form_for(@article, html: {class: 'form-horizontal'}) do |f| %>
+		  <%= f.error_notification %>
+		  
+		    <%= f.input :title %>
+		    <%= f.cktext_area :body, :class => 'ckeditor'%>    
+		    <%= f.input :image, as: :file, label: "Cover picture"%>
+		    <%= f.button :submit %>
+		    <%= link_to 'Back', articles_path, class: "btn btn-link"%>
+		<% end %>
+	</div>
+</div>

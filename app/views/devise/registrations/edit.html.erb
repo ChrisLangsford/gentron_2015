@@ -1,0 +1,24 @@
+<h2>Change Password</h2>
+<div class="row well">
+  <div class="col-md-12">
+    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: "form-horizontal" }) do |f| %>
+      <%= f.error_notification %>
+
+
+        <%= f.input :email, required: true, autofocus: true %>
+
+        <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+          <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+        <% end %>
+
+        <%= f.input :current_password, hint: "we need your current password to confirm your changes", required: true %>
+        <%= f.input :password, autocomplete: "off",label: "New password" , required: false %>
+        <%= f.input :password_confirmation, required: false %>
+        <%= f.button :submit, "Update" %>
+        <%= link_to "back", :back, class: "btn btn-link" %>
+
+    <% end %>
+
+    
+  </div>
+</div>
