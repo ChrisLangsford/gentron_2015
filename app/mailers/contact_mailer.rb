@@ -6,6 +6,6 @@ class ContactMailer < ActionMailer::Base
 
   	@person = @corres.first_name + " " + @corres.last_name
 
-  	mail(to: "langz020@gmail.com", subject: "#{@corres.corres_type} requested by #{@person} from #{@corres.company}")
+  	mail(to: "quotes@gentron.co.za", subject: "#{@corres.corres_type} requested by #{@person} from #{@corres.company}")
   end
 end
