@@ -92,5 +92,6 @@ Rails.application.configure do
     #:password  => ENV["EMAIL_PASSWORD"],
     authentication:       :none,
     enable_starttls_auto: true  }
+    config.action_mailer.default_options = {from: 'webmaster@gentron.co.za'}
 
 end
