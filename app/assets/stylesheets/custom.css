@@ -168,7 +168,7 @@ nav ul {
 }
 
 .brand-logo {
-	width:70%;
+	
 	margin-bottom: 0.4em; 
 }
 
@@ -183,4 +183,18 @@ nav ul {
 
 ol li {
 	font-size: 1.2em;
+}
+.thumbnail {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+.thumbnail img {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
 }
