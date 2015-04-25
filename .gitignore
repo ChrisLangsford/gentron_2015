@@ -19,3 +19,6 @@
 
 .rbenv-vars
 
+/shared
+
+/public/assets
