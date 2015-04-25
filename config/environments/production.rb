@@ -89,6 +89,7 @@ Rails.application.configure do
  config.action_mailer.smtp_settings = {
     address:              'smtp.saix.net',
     port:                 25,
+    domain:               "www.gentron.co.za",
     #:user_name => ENV["EMAIL_USERNAME"],
     #:password  => ENV["EMAIL_PASSWORD"],
     authentication:       :none,
