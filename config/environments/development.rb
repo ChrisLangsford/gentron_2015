@@ -42,7 +42,7 @@ Rails.application.configure do
     port:                 25,
     #:user_name => ENV["EMAIL_USERNAME"],
     #:password  => ENV["EMAIL_PASSWORD"],
-    authentication:       :none,
+    #authentication:       :none,
     enable_starttls_auto: true  }
 
   # Raises error for missing translations
