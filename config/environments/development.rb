@@ -36,7 +36,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.perform_deliveries = true
 
-  config.mailer_sender = 'web@gentron.local'
+  config.mailer_sender = 'webmaster.gentron@gmail.com'
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
@@ -46,7 +46,7 @@ Rails.application.configure do
     :password  => ENV["EMAIL_PASSWORD"],
     authentication:       :plain,
     enable_starttls_auto: true  }
-    config.action_mailer.default_options = {from: 'web@gentron.co.za'}
+    config.action_mailer.default_options = {from: 'webmaster.gentron@gmail.com'}
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
