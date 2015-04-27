@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default from: "webmaster@gentron.co.za"
+  default from: "web@gentron.co.za"
 
   def contact_email(corres)
   	@corres = corres

@@ -79,7 +79,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.mailer_sender = 'webmaster@gentron.co.za'
+  config.mailer_sender = 'web@gentron.co.za'
 
   config.action_mailer.default_url_options = { :host => '46.101.6.77' }
   config.action_mailer.perform_deliveries = true
@@ -93,6 +93,6 @@ Rails.application.configure do
     #:password  => ENV["EMAIL_PASSWORD"],
     #authentication:       :none,
     enable_starttls_auto: true  }
-    config.action_mailer.default_options = {from: 'webmaster@gentron.co.za'}
+    config.action_mailer.default_options = {from: 'web@gentron.co.za'}
 
 end

@@ -1,5 +1,5 @@
 class FeedbackMailer < ActionMailer::Base
-  default from: "webmaster@gentron.co.za"
+  default from: "web@gentron.co.za"
 
   def feedback_email(feedback)
   	@feedback = feedback
