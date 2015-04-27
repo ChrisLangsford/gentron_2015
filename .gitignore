@@ -20,3 +20,5 @@
 .rbenv-vars
 
 /shared
+
+production vars
