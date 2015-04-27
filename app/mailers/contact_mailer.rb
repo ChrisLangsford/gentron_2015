@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-	default from: "scanner@gentron.local"
+	default from: "web@gentron.local"
   def contact_email(corres)
   	@corres = corres
   	@person = @corres.first_name + " " + @corres.last_name

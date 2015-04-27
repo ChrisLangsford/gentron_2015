@@ -79,7 +79,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  
+
   config.mailer_sender = 'scanner@gentron.local'
 
   config.action_mailer.default_url_options = { :host => '46.101.6.77' }
@@ -88,11 +88,12 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
  config.action_mailer.smtp_settings = {
-    address:              'smtp.saix.net',
+    address:              'mail.gentron.co.za',
+    domain: 'gentron.co.za',
     port:                 25,
-    #:user_name => ENV["EMAIL_USERNAME"],
-    #:password  => ENV["EMAIL_PASSWORD"],
-    #authentication:       :none,
+    :user_name => ENV["EMAIL_USERNAME"],
+    :password  => ENV["EMAIL_PASSWORD"],
+    authentication:       :plain,
     enable_starttls_auto: true  }
 
 end
