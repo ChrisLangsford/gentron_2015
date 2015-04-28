@@ -26,6 +26,17 @@ body {
 	padding-top: 0;
 }
 
+.industry-news-section {
+	background-color: #FFF;
+	padding: 0em 1em 1em 2em;
+	border: 1px #639846 solid;
+}
+
+.industry-news-link a:active {
+	color:#639846;
+
+}
+
 .home-section-alt {
 	background-color: #eee;
 	text-align: center;

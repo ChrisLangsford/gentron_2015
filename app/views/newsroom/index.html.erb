@@ -2,6 +2,14 @@
   Newsroom  
 </h1>
 
+<div class="industry-news-section">
+<h3>Industry News</h3>
+<%@entries.each do |entry|%>
+  <ul>
+    <li><%=link_to entry.title, entry.url, class: "industry-news-link"%></li>
+   </ul>
+   <%end%>
+</div>
 <%@articles.each do |a|%>
   <div class="newsroom-section">
     <h2>
