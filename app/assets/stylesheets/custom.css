@@ -32,7 +32,7 @@ body {
 	border: 1px #639846 solid;
 }
 
-.industry-news-link a:active {
+.industry-news-link a{
 	color:#639846;
 
 }
