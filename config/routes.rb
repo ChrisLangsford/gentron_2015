@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   get 'newsroom' => 'newsroom#index'
 
   get 'email-disclaimer' => 'disclaimer#index'
+  get 'website-disclaimer' => 'disclaimer#web'
   get 'team' => 'team#index'
 
 

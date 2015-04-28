@@ -1,0 +1,16 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../../../css/custom.css);
+
+
+.custom-logo { 
+background-image: url(../../../../../images/yootheme/logo_green.png); 
+width: 138px;
+	height: 72px;
+	z-index:999;
+
+}
+
+.frontpage-teaser1 { background-image: url(../../../../../images/yootheme/demo/slideshow/infinite_teaser1_green.jpg); }

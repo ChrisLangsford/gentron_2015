@@ -1,0 +1,1 @@
+[18-Feb-2015 14:05:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/btsbcoza/public_html/layout/header.php:58) in /home/btsbcoza/public_html/index.php on line 2
