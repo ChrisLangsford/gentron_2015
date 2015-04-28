@@ -2,19 +2,11 @@
   Newsroom  
 </h1>
 
-<div class="industry-news-section">
-<h3>Industry News</h3>
-<%@entries.each do |entry|%>
-  <ul>
-    <li><%=link_to entry.title, entry.url, class: "industry-news-link"%></li>
-   </ul>
-   <%end%>
-</div>
-<br>
+
 <%@articles.each do |a|%>
   <div class="newsroom-section">
     <h2>
-      <%=a.title.capitalize%> 
+      <%=a.title.upcase%> 
     </h2>   
     <br> 
     <%=image_tag(a.image, class: "article-image")%>
