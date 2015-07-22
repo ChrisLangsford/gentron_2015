@@ -3,6 +3,6 @@ class StaffController < ApplicationController
 	  layout 'dynamic'
 
 	def index
-		
+
 	end
 end

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'about_us/index'
 
   resources :articles
-  
+
   resources :correspondences, except: [:index, :show, :edit, :update]
 
   resources :feedbacks, except: [:edit, :update]
@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'staff/' => 'staff#index'
   get 'reports/feedback' => 'reports#feedback'
   get 'newsroom' => 'newsroom#index'
+  get 'services' => 'services#index'
 
   get 'email-disclaimer' => 'disclaimer#index'
   get 'website-disclaimer' => 'disclaimer#web'
