@@ -4,3 +4,7 @@
 	padding-bottom: 6em;
 	padding-top: 0;
 }
+
+.style_image {
+  border-right: 1px solid #000;
+}

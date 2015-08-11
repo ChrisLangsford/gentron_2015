@@ -37,6 +37,12 @@ body {
 
 }
 
+.style_image
+{
+  width: 75px;
+  height: 75px;
+}
+
 .home-section-alt {
 	background-color: #eee;
 	text-align: center;
@@ -179,8 +185,8 @@ nav ul {
 }
 
 .brand-logo {
-	
-	margin-bottom: 0.4em; 
+
+	margin-bottom: 0.4em;
 }
 
 .article-image {
@@ -196,10 +202,35 @@ ol li {
 	font-size: 1.2em;
 }
 .thumbnail {
-    width: 250px;
-    height: 250px;
+    width: 120px;
+    height: 120px;
     overflow: hidden;
     position: relative;
+    padding-right: 10px;
+    display:inline-block;
+    text-align: center
+}
+.mservices
+{
+	margin-right: 30px
+}
+
+.approach-list
+{
+	text-align: left;
+	line-height:1.5;
+}
+
+.icon
+{
+	text-align: center;
+	width:75px;
+	height:75px;
+}
+
+.sub-heading
+{
+	text-align: left;
 }
 .thumbnail img {
     position: absolute;
