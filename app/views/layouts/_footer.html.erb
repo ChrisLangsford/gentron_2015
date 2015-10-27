@@ -5,7 +5,7 @@
 					<%=image_tag("logo2.png", height: "60px", width: "auto", class: "nav navbar-nav navbar-left")%>
 					<ul class="nav navbar-nav navbar-right nav-bottom">
 						<li><%=link_to "View our T's & C's", '/docs/Terms and Conditions.pdf', target: "_blank"%></li>
-						<li><%=link_to "View our B-BBEE Certificate", '/docs/BEE Certificate 2014.pdf', target: "_blank"%></li>
+						<li><%=link_to "View our B-BBEE Certificate", '/docs/BEE Certificate.pdf', target: "_blank"%></li>
 						<li><%=link_to "Email Disclaimer", email_disclaimer_path%></li>
 						<%if current_user.present?%>
 						<li><%=link_to staff_path do %>Logged in as: <b><%=current_user.email%></b><%end%></li>
