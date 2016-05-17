@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
 
-  get 'solutions/index'
+  root 'welcome#index'
+  get 'company' => 'company#index'
+  get 'services' => 'services#index'
 
-  get 'about_us/index'
-
+  get 'newsroom' => 'newsroom#index' #renamed to Blog
   resources :articles
+
+  get 'team' => 'team#index'
 
   resources :correspondences, except: [:index, :show, :edit, :update]
 
@@ -18,15 +21,17 @@ Rails.application.routes.draw do
     get '/logout' => 'devise/sessions#destroy'
   end
   resources :user, :controller => "user"
-  root 'welcome#index'
+  
   get 'staff/' => 'staff#index'
-  get 'reports/feedback' => 'reports#feedback'
-  get 'newsroom' => 'newsroom#index'
-  get 'services' => 'services#index'
 
+  get 'reports/feedback' => 'reports#feedback'
+
+  #footer extras
   get 'email-disclaimer' => 'disclaimer#index'
   get 'website-disclaimer' => 'disclaimer#web'
-  get 'team' => 'team#index'
+
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
