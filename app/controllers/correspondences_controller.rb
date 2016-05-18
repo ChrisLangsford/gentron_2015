@@ -2,7 +2,6 @@ class CorrespondencesController < ApplicationController
     before_action :authenticate_user!, except: [:new, :create]
 
   before_action :set_correspondence, only: [:show, :edit, :update, :destroy]
-    layout 'dynamic'
 
 
   respond_to :html

@@ -1,5 +1,5 @@
 class ReportsController < ApplicationController
-	  layout 'dynamic'
+	  
 
 	def feedback
 		@feedbacks = Feedback.all
