@@ -32,7 +32,6 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'simple_form'
 gem 'paperclip'
-#gem "font-awesome-sass"
 
 gem 'seed_dump', '~> 3.2.0'
 gem 'twitter-bootstrap-rails'
