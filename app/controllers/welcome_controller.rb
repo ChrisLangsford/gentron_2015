@@ -4,4 +4,8 @@ class WelcomeController < ApplicationController
 
 	def company		
 	end
+
+	def managed_services		
+	end
+	
 end

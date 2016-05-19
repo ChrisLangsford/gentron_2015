@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   get 'company' => 'welcome#company'
-  get 'services' => 'services#index'
+  get 'services' => 'welcome#managed_services'
 
   get 'newsroom' => 'newsroom#index' #renamed to Blog
   resources :articles
