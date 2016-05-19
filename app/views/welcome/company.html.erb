@@ -1,1 +1,174 @@
-<h1>Team</h1>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%=link_to "Gentron", root_path, class:"navbar-brand page-scroll"%>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li>          
+        <%=link_to "Home", root_path, class:"page-scroll"%>
+        </li>
+        <li>
+          <a class="page-scroll" href="#about">About</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#testimonials">Testimonials</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#team">Team</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-lead-in"></div>
+      <div class="intro-heading">Who we are </div>
+      <a href="#about" class="page-scroll btn btn-xl">More</a>
+    </div>
+  </div>
+</header>
+
+
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">About Us</h2>
+        <p>
+          Gentron was founded in 1992 as a technology supply company, but soon grew to become one of the leading suppliers of IT support services in South Africa. We provide a whole host of services to our clients, all contributing to a full IT package, including professional support, strategic consulting and cloud computing.  
+          <br><br>
+          On the technology side, we provide a long list of brands, including Acer, Asus, Mecer, Gigabyte, Sony, Samsung and Apple, along with software to provide a complete IT solution that meet the needs of our clients. Our hardware comes with an on-site warranty at no additional cost.
+          <br><br>
+          We don’t simply want to be service providers, but want our clients to see us as business partners helping to make their lives easier. Consider us your outsourced IT department.
+          <br><br>
+          <h4 class="section-subheading text-muted">VISION</h4>
+          To become the preferred supplier of IT services and technology in South Africa and build on our reputation for always being accessible and reliable.
+          <br><br>
+          <h4 class="section-subheading text-muted">MISSION</h4>
+          To provide innovative solutions that exceed client expectations and not to be a drop-off-and-go company, but build long-term relationships with clients. We are always available and virtual, meaning we can be reached for assistance over any internet enabled device from anywhere in the country.
+          <br><br>
+          <h4 class="section-subheading text-muted">Values</h4>          
+          Open |
+          Humility |
+          Ethical |
+          Integrity |
+          Innovative |
+          Reliable |
+          High-performance |
+        </p>      
+        <br>            
+        <%= link_to "Tell Me More", company_path, class: "page-scroll btn btn-xl"%>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="testimonials" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">What Our Clients Say</h2>
+        <p>
+          With over 21 years’ experience, Gentron has built up a wealth of knowledge as an IT support company and hardware supplier. We don’t simply want to be service providers for our clients, but rather become something similar to business partners through long-term relationships and excellent service. See what some of our clients have had to say about us! 
+          <br /><hr><br />
+          <b>“Gentron will always go the extra mile, even though we are not a big corporate company. They really try to accommodate our limited financial budget.”</b><br>
+          – Financial Manager for a leading private Afrikaans high school
+          <br><br>
+          <b>“Gentron is your one stop IT shop, from hardware, software, knowledge and skills. I would definitely recommend them.”</b><br>
+          – Manager of the IT department of a private school for girls
+          <br><br>
+          <b>“Gentron’s service is great and reliable and their technicians are friendly. We have had no hassles and I would gladly recommend them.”</b><br>
+          – ICT Director for a collection of schools in Lyme Park, Sandton
+          <br><hr>
+        </p>      
+        <br>            
+        <%= link_to "Tell Me More", company_path, class: "page-scroll btn btn-xl"%>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Team Section -->
+<section id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Our Amazing Team</h2>
+        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+          <h4>Kay Garland</h4>
+          <p class="text-muted">Lead Designer</p>
+          <ul class="list-inline social-buttons">
+            <li><a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+          <h4>Larry Parker</h4>
+          <p class="text-muted">Lead Marketer</p>
+          <ul class="list-inline social-buttons">
+            <li><a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+          <h4>Diana Pertersen</h4>
+          <p class="text-muted">Lead Developer</p>
+          <ul class="list-inline social-buttons">
+            <li><a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+      </div>
+    </div>
+  </div>
+</section>
