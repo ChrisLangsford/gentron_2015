@@ -737,3 +737,5 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+
+img .apps_img {border:0;}
