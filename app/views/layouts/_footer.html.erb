@@ -61,12 +61,33 @@
                <li><a href="#">T's & C's</a></li>
                <li><a href="#">Disclaimer</a></li>
                <li><a href="#">B-BBBEE Certificate</a></li>
-               <li><a href="#">Login</a></li>
+               <li><a href="#loginModal" data-toggle="modal">Login</a></li>
            </ul>
        </div>
    </div>
 </div>
 </footer>
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                          <%= render 'devise/sessions/new'%>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
