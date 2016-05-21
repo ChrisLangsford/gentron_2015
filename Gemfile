@@ -36,7 +36,9 @@ gem 'paperclip'
 gem 'seed_dump', '~> 3.2.0'
 gem 'twitter-bootstrap-rails'
 gem 'ckeditor'
-gem 'valid_email' 	
+gem 'valid_email' 
+
+gem 'kaminari', '~> 0.16.3'	
 
 gem 'simple_captcha2', require: 'simple_captcha'
 # Use ActiveModel has_secure_password
