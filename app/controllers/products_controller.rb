@@ -7,12 +7,12 @@ class ProductsController < ApplicationController
   respond_to :html
 
   def staff_index   
-    @products = Product.order("name").page(params[:page]).per(10)
+    @products = Product.order("name").page(params[:page]).per(9)
     respond_with(@products) 
   end
 
   def index
-    @products = Product.order("name").page(params[:page]).per(10)
+    @products = Product.order("name").page(params[:page]).per(9)
     respond_with(@products)
   end
 
