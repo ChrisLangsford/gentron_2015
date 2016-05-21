@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :products
+
+  get 'products_staff' => 'products#staff_index'
+
   root 'welcome#index'
   get 'company' => 'welcome#company'
   get 'services' => 'welcome#managed_services'
