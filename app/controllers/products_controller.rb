@@ -12,7 +12,11 @@ class ProductsController < ApplicationController
   end
 
   def index
-    @products = Product.order("name").page(params[:page]).per(9)
+    @search = Product.search do
+      fulltext params[:search]
+      paginate(page: params[:page], :per_page => 9)
+    end
+    @products = @search.results
     respond_with(@products)
   end
 
@@ -45,11 +49,11 @@ class ProductsController < ApplicationController
   end
 
   private
-    def set_product
-      @product = Product.find(params[:id])
-    end
+  def set_product
+    @product = Product.find(params[:id])
+  end
 
-    def product_params
-      params.require(:product).permit(:name, :description)
-    end
+  def product_params
+    params.require(:product).permit(:name, :description)
+  end
 end

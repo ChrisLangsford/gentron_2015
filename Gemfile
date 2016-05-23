@@ -38,7 +38,10 @@ gem 'twitter-bootstrap-rails'
 gem 'ckeditor'
 gem 'valid_email' 
 
-gem 'kaminari', '~> 0.16.3'	
+gem 'kaminari', '~> 0.16.3'
+gem 'sunspot_rails'
+
+gem 'sunspot_solr'
 
 gem 'simple_captcha2', require: 'simple_captcha'
 # Use ActiveModel has_secure_password
