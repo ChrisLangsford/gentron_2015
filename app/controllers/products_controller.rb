@@ -7,7 +7,11 @@ class ProductsController < ApplicationController
   respond_to :html
 
   def staff_index   
-    @products = Product.order("name").page(params[:page]).per(9)
+    @search = Product.search do
+      fulltext params[:search]
+      paginate(page: params[:page], :per_page => 12)
+    end
+    @products = @search.results
     respond_with(@products) 
   end
 
