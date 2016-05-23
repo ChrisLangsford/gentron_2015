@@ -71,7 +71,7 @@
 
       <% @products.each do |product| %>
       <div class="col-md-4 col-sm-6 portfolio-item">
-        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+        <%=image_tag product.picture.url, class: "img-responsive"%> 
         <div class="portfolio-caption">
           <h4><%=product.name%></h4>
           <p class="text-muted"><%=product.description%></p>
