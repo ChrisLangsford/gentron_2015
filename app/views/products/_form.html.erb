@@ -5,9 +5,10 @@
     <%= f.input :name %>
     <%= f.input :description %>
     <%= f.input :picture, as: :file %>
+    <%= f.input :onSpecial, as: :boolean, label: "On Special"%>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, label: "on Special" %>
   </div>
 <% end %>
