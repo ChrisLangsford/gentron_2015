@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'special/specials'
+
   resources :products
 
   get 'products_staff' => 'products#staff_index'

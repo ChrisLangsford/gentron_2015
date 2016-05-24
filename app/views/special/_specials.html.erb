@@ -1,0 +1,4 @@
+<%@specials = Product.where(onSpecial: true)%>
+<%@specials.each do |s|%>
+<%=s.name%>
+<%end%>
