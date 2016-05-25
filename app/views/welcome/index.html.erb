@@ -52,13 +52,15 @@
     </div>
 </header>
 
-<section id="specials">
+<%if @specials.count >=1%>
+<section id="specials" class="bg-darkest-gray">
     <div class="container">
         <div class="row">
-        <%= render 'special/specials'%>
+        <%= render 'special/specials', specials: @specials%>
         </div>        
     </div>
 </section>
+<%end%>
 
 <!-- Services Section -->
 <section id="services">
