@@ -353,6 +353,8 @@ section h3.section-subheading {
   text-align: center;
   padding: 25px;
 }
+
+
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
   margin: 0;
@@ -556,6 +558,12 @@ section h3.section-subheading {
 }
 aside.clients img {
   margin: 50px auto;
+}
+aside h2.section-heading-dark {
+  color: white;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 section#contact {
   background-color: #222222;
