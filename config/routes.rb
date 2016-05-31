@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'company' => 'welcome#company'
   get 'services' => 'welcome#managed_services'
 
-  get 'newsroom' => 'newsroom#index' #renamed to Blog
+  get 'blog' => 'newsroom#index' #renamed to Blog
   resources :articles
 
   get 'team' => 'team#index'
