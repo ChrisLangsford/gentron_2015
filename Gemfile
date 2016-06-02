@@ -51,6 +51,10 @@ gem 'simple_captcha2', require: 'simple_captcha'
 gem 'unicorn'
 gem 'rails_12factor', group: :production
 gem 'feedjira', '~> 1.6.0'
+
+
+gem 'omniauth-facebook'
+gem 'koala'
 #gem "linkedin-oauth2", "~> 1.0"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
