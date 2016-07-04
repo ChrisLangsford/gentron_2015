@@ -152,6 +152,7 @@ fieldset[disabled] .btn-xl.active {
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
+  background: url("../img/logo.jpg") center / contain no-repeat;
   color: #f44336;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
