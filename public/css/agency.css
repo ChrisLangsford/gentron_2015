@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-body {
+ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -152,10 +152,12 @@ fieldset[disabled] .btn-xl.active {
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
-  background: url("../img/logo.jpg") center / contain no-repeat;
-  color: #f44336;
+  background: url("../img/logo.png") center / contain no-repeat;
+  color: transparent;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
+
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
