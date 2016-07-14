@@ -32,7 +32,7 @@
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
                 <li>
-                <a target="_blank" href="http://www.facebook.com/GentronGroup" class="page-scroll">News</a>
+                    <a target="_blank" href="http://www.facebook.com/GentronGroup" class="page-scroll">News</a>
                 </li>
             </ul>
         </div>
@@ -54,13 +54,7 @@
 </header>
 
 <%if @specials.count >=1%>
-<section id="portfolio" class=" clients bg-darkest-gray">
-    <div class="container">
-        <div class="row">
-            <%= render 'special/specials', specials: @specials%>
-        </div>        
-    </div>
-</section>
+<%= render 'special/specials', specials: @specials%>
 <%end%>
 
 <!-- Services Section -->
