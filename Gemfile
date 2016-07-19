@@ -49,7 +49,7 @@ gem 'simple_captcha2', require: 'simple_captcha'
 
 # Use unicorn as the app server
 gem 'unicorn'
-gem 'rails_12factor', group: :production
+#gem 'rails_12factor', group: :production
 gem 'feedjira', '~> 1.6.0'
 
 
