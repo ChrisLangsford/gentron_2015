@@ -53,7 +53,7 @@ gem 'unicorn'
 gem 'feedjira', '~> 1.6.0'
 
 gem 'omniauth-facebook'
-#gem 'koala'
+gem 'koala'
 #gem "linkedin-oauth2", "~> 1.0"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
