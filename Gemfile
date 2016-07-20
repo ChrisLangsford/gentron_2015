@@ -39,9 +39,9 @@ gem 'ckeditor'
 gem 'valid_email' 
 
 gem 'kaminari', '~> 0.16.3'
-gem 'sunspot_rails'
+#gem 'sunspot_rails'
 
-gem 'sunspot_solr'
+#gem 'sunspot_solr'
 
 gem 'simple_captcha2', require: 'simple_captcha'
 # Use ActiveModel has_secure_password
@@ -52,9 +52,8 @@ gem 'unicorn'
 #gem 'rails_12factor', group: :production
 gem 'feedjira', '~> 1.6.0'
 
-
 gem 'omniauth-facebook'
-gem 'koala'
+#gem 'koala'
 #gem "linkedin-oauth2", "~> 1.0"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

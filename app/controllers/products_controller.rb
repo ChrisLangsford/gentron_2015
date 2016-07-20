@@ -6,21 +6,15 @@ class ProductsController < ApplicationController
 
   respond_to :html
 
-  def staff_index   
-    @search = Product.search do
-      fulltext params[:search]
-      paginate(page: params[:page], :per_page => 12)
-    end
-    @products = @search.results
+  def staff_index 
+    @products = Product.order("name").page(params[:page]).per(5)
+
     respond_with(@products) 
   end
 
   def index
-    @search = Product.search do
-      fulltext params[:search]
-      paginate(page: params[:page], :per_page => 9)
-    end
-    @products = @search.results
+    @products = Product.order("name").page(params[:page]).per(5)
+
     respond_with(@products)
   end
 
