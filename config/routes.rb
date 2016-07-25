@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'business' => 'welcome#business'
   get 'education' => 'welcome#education'
 
-  get 'blog' => 'newsroom#index' #renamed to Blog
+  #get 'blog' => 'newsroom#index' #renamed to Blog
   resources :articles
 
   get 'team' => 'team#index'
