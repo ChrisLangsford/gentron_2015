@@ -1,4 +1,5 @@
 class CorrespondencesController < ApplicationController
+  layout "corres_layout"
     before_action :authenticate_user!, except: [:new, :create]
 
   before_action :set_correspondence, only: [:show, :edit, :update, :destroy]
