@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get 'company' => 'welcome#company'
   get 'services' => 'welcome#managed_services'
+  get 'business' => 'welcome#business'
+  get 'education' => 'welcome#education'
 
   get 'blog' => 'newsroom#index' #renamed to Blog
   resources :articles

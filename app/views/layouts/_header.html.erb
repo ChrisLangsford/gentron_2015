@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
             </button>
             <%=link_to root_path, class:"navbar-brand page-scroll" do%>
-            "Gentron"
+            Gentron
             <%end%>
             
         </div>
@@ -25,19 +25,19 @@
                     <%=link_to "Home", root_path%>
                 </li>
                 <li>
-                <a class="" href="#services">Business</a>
+                    <%=link_to "Business", business_path%>
                 </li>
                 <li>
-                    <a class="" href="#about">Education</a>
+                    <%=link_to "Education", education_path%>
                 </li>
                 <li>
-                  <a class="" href="#education">Company</a>
+                  <%=link_to "Company", company_path%>
               </li> 
               <li>
-                <a class="" href="#contact">Contact</a>
-            </li>
-            <li>
-                <a target="_blank" href="http://www.facebook.com/GentronGroup" class="">News</a>
+                  <a href="#contact" class="page-scroll">Contact</a>
+              </li>
+              <li>
+                <%=link_to "News", blog_path%>
             </li>
         </ul>
     </div>
