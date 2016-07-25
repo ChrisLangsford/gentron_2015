@@ -58,9 +58,9 @@
            </div>
            <div class="col-md-4">
             <ul class="list-inline quicklinks">
-               <li><a href="#">T's & C's</a></li>
-               <li><a href="#">Disclaimer</a></li>
-               <li><a href="#">B-BBBEE Certificate</a></li>
+               <li><%=link_to "T's & C's", '/docs/Terms and Conditions.pdf', target: "_blank"%></li>
+               <li><%=link_to "Disclaimer", website_disclaimer_path%></li>
+               <li><%=link_to "B-BBEE Certificate", '/docs/BEE Certificate.pdf', target: "_blank"%></li>
                <li><a href="#loginModal" data-toggle="modal">Login</a></li>
            </ul>
        </div>
