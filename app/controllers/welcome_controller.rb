@@ -8,5 +8,11 @@ class WelcomeController < ApplicationController
 
 	def managed_services		
 	end
+
+	def business		
+	end
+
+	def education		
+	end
 	
 end
