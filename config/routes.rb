@@ -25,7 +25,7 @@ Rails.application.routes.draw do
 
   devise_for :users, :controllers => {:sessions => "sessions"}
   devise_scope :user do
-    get '/login' => 'devise/sessions#new'
+    get '/login' => 'staff#index'
     get '/logout' => 'devise/sessions#destroy'
   end
   resources :user, :controller => "user"
