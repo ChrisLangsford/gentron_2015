@@ -22,12 +22,5 @@ module Gentron2015
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
     config.assets.enabled = false
 
-    config.to_prepare do
-        Devise::SessionsController.layout "staff_layout"
-        Devise::RegistrationsController.layout "staff_layout"
-        Devise::ConfirmationsController.layout "staff_layout"
-        Devise::UnlocksController.layout "staff_layout"
-        Devise::PasswordsController.layout "staff_layout"
-    end
 end
 end
