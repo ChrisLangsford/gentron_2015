@@ -15,7 +15,6 @@
 	<table class="table table-bordered">
 		<thead>
 			<th>Email</th>
-			<th>Options</th>
 		</thead>
 		<tbody>
 			<%@users.each do |u|%>
@@ -25,12 +24,12 @@
 
 			<tr>
 				<td><%=u.email%></td>
-				<td>
+<!-- 				<td>
 					<%= link_to "Edit", edit_user_registration_path(u), class:  "btn btn-xs btn-warning " %>
 					<%= link_to u, method: :delete, data: {confrim: "Are you sure?"}, class: (me ? "btn btn-xs btn-danger disabled" : "btn btn-xs btn-danger ") do%>
 					Delete Account
 					<%end%>
-				</td>
+				</td> -->
 			</tr>
 			<%end%>
 		</tbody>
