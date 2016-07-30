@@ -26,7 +26,7 @@
 			<tr>
 				<td><%=u.email%></td>
 				<td>
-					<%= link_to "Edit", edit_user_path(u), class:  "btn btn-xs btn-warning " %>
+					<%= link_to "Edit", edit_user_registration_path(u), class:  "btn btn-xs btn-warning " %>
 					<%= link_to u, method: :delete, data: {confrim: "Are you sure?"}, class: (me ? "btn btn-xs btn-danger disabled" : "btn btn-xs btn-danger ") do%>
 					Delete Account
 					<%end%>

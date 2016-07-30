@@ -15,19 +15,22 @@ Rails.application.routes.draw do
   get 'blog' => 'newsroom#index' #renamed to Blog
   resources :articles
 
-  get 'team' => 'team#index'
+  #get 'team' => 'team#index'
 
   resources :correspondences, except: [:index, :show, :edit, :update]
 
   resources :feedbacks, except: [:edit, :update]
 
-  mount Ckeditor::Engine => '/ckeditor'
+  #mount Ckeditor::Engine => '/ckeditor'
 
-  devise_for :users, :controllers => {:sessions => "sessions"}
+  devise_for :users
+  
   devise_scope :user do
-    get '/login' => 'staff#index'
+    get '/login' => 'devise/sessions#new'
     get '/logout' => 'devise/sessions#destroy'
   end
+
+
   resources :user, :controller => "user"
   
   get 'staff/' => 'staff#index'
@@ -37,10 +40,6 @@ Rails.application.routes.draw do
   #footer extras
   get 'email-disclaimer' => 'disclaimer#index'
   get 'website-disclaimer' => 'disclaimer#web'
-
-
-
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
