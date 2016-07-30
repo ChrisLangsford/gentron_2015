@@ -48,7 +48,7 @@ def index
 
   def destroy    
     if @user.destroy
-      flash[:notice] = "Successfully deleted User."
+      #flash[:notice] = "Successfully deleted User."
       redirect_to user_index_path
     end
   end 
