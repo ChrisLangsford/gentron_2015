@@ -1,5 +1,5 @@
 class ReportsController < ApplicationController
-	  
+	layout "staff_layout"
 
 	def feedback
 		@feedbacks = Feedback.all
