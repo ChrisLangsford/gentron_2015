@@ -69,7 +69,7 @@ Rails.application.configure do
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
-  config.i18n.fallbacks = true
+config.i18n.fallbacks = true
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
@@ -90,13 +90,14 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.delivery_method = :smtp
- config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
-    :user_name => ENV["EMAIL_USERNAME"],
-    :password  => ENV["EMAIL_PASSWORD"],
-    authentication:       :plain,
-    enable_starttls_auto: true  }    
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :domain               => "gmail.com",
+    :user_name            => "[EMAIL_USERNAME]",
+    :password             => "[EMAIL_PASSWORD]",
+    :authentication       => :plain,
+    :enable_starttls_auto => true}   
     config.action_mailer.default_options = {from: 'webmaster.gentron@gmail.com'}
 
-end
+  end
