@@ -1,5 +1,5 @@
 class FeedbacksController < ApplicationController
-  layout "staff_layout"
+  layout "corres_layout"
   before_action :authenticate_user!, except: [:new, :create]
   before_action :set_feedback, only: [:show, :edit, :update, :destroy]
 
