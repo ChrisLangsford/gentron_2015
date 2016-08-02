@@ -2,7 +2,8 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index]
 
-  layout 'staff_layout', except: [:index]
+  layout 'staff_layout', only: [:staff_index]
+  layout 'corres_layout', except:[:index]
 
   respond_to :html
 
