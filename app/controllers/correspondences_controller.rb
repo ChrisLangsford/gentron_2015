@@ -27,8 +27,8 @@ class CorrespondencesController < ApplicationController
   def create
     @correspondence = Correspondence.new(correspondence_params)
     if @correspondence.save
-    ContactMailer.contact_email(@correspondence).deliver
-    redirect_to root_url
+      ContactMailer.contact_email(@correspondence).deliver
+      redirect_to root_url
     else
       render 'new'
     end
