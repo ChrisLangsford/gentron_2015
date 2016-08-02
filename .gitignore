@@ -18,6 +18,7 @@
 /config/database.yml
 
 .rbenv-vars
+.env
 
 /shared
 
