@@ -33,7 +33,7 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
-  config.action_mailer.raise_delivery_errors = true  
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.perform_deliveries = true
 
@@ -44,8 +44,8 @@ Rails.application.configure do
     :address              => "smtp.gmail.com",
     :port                 => 587,
     :domain               => "gmail.com",
-    :user_name            => "[EMAIL_USERNAME]",
-    :password             => "[EMAIL_PASSWORD]",
+    :user_name            => ENV['EMAIL_USERNAME'],
+    :password             => ENV['EMAIL_PASSWORD'],
     :authentication       => :plain,
     :enable_starttls_auto => true}
     config.action_mailer.default_options = {from: 'webmaster.gentron@gmail.com'}

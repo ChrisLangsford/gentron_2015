@@ -21,14 +21,14 @@ Rails.application.configure do
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
   config.assets.enabled = false
-  
+
   config.serve_static_assets = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
-  # Do not fallback to assets pipeline if a precompiled asset is missed.  
+  # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
   # Generate digests for assets URLs.
@@ -94,10 +94,10 @@ config.i18n.fallbacks = true
     :address              => "smtp.gmail.com",
     :port                 => 587,
     :domain               => "gmail.com",
-    :user_name            => "[EMAIL_USERNAME]",
-    :password             => "[EMAIL_PASSWORD]",
+    :user_name            => ENV['EMAIL_USERNAME'],
+    :password             => ENV['EMAIL_PASSWORD'],
     :authentication       => :plain,
-    :enable_starttls_auto => true}   
+    :enable_starttls_auto => true}
     config.action_mailer.default_options = {from: 'webmaster.gentron@gmail.com'}
 
   end

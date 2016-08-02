@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'dotenv-rails', :groups => [:development, :test, :production]
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -36,7 +36,7 @@ gem 'paperclip'
 gem 'seed_dump', '~> 3.2.0'
 gem 'twitter-bootstrap-rails'
 gem 'ckeditor'
-gem 'valid_email' 
+gem 'valid_email'
 
 gem 'kaminari', '~> 0.16.3'
 #gem 'sunspot_rails'
@@ -60,4 +60,3 @@ gem 'koala'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
