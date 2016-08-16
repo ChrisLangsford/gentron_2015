@@ -54,6 +54,10 @@ h6 {
 .bg-light-gray {
   background-color: #f7f7f7;
 }
+
+.bg-white {
+  background-color: #ffffff;
+}
 .bg-darkest-gray {
   background-color: #727272;
 }
@@ -346,6 +350,12 @@ section h2.section-heading {
   margin-top: 0;
   margin-bottom: 15px;
 }
+
+section h2.special-section-heading {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
 section h2.section-heading-dark {
   color: white;
   font-size: 40px;
@@ -822,3 +832,7 @@ body {
 }
 
 img .apps_img {border:0;}
+
+.special_image {
+  width: 100%;
+}
